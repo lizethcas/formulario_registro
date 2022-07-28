@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient1: linear-gradient(135deg, #667eea86 0%, #764ba28e 100%);
+    --url-img: url("img/danza.jpg");
+    --box-shadow: 6px 6px 10px rgba(0, 0, 0, .6);
+    --width: 100%;
+    --radius: 8px
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: var(--gradient1), var(--url-img);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.1px;
+    background-repeat: no-repeat;
+
+
+}
+
+.div {
+    width: 600px;
+    padding: 0.1px;
+    margin: 20px auto 0;
+}
+
+.div .titulo {
+    color: #f2f2f2;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -10px;
+}
+
+.form {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.795);
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    outline: none;
+
+}
+
+.input
+
+/* .mensaje_form  */
+    {
+    width: var(--width);
+    padding: 20px 5px;
+    display: block;
+   /*  border: 1px solid #b39b9b; */
+    margin: 10px 0;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #b39b9b;
+}
+
+
+.titulo {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* .mensaje_form {
+    max-width: var(--width);
+    min-width: var(--width);
+    min-height: 150px;
+    max-height: 150px;
+
+}
+ */
+.borrar,
+.enviar_form {
+    margin-top: 20px;
+    width: 48%;
+    display: block;
+    background-image: var(--gradient);
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.borrar:hover,
+.enviar_form:hover {
+    background-image: var(--gradient1);
+}
+
+.botones .enviar_form,
+.botones .borrar {
+    display: inline;
+}
+
+.form .botones {
+    width: var(--width);
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+@media screen and (max-width:768px) {
+    body {
+        padding: 80px 0;
+    }
+
+    .form {
+        margin: 0 auto;
+    }
+  
+}
+
+@media screen and (max-width:425px) {
+    body {
+        padding: 40px 0;
+    }
+    .div{
+        width: 90%;
+    }
+    .div .titulo{
+        font-size: 70px;
+
+    }
+
+    .form {
+        width: 90%;
+
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .enviar_form {
+        font-size: 1rem;
+    }
+}

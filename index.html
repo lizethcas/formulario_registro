@@ -24,12 +24,18 @@
   <body>
     <div class="div"><h1 class="titulo">SAMARAU</h1></div>
 
-    <form class="form" id="formul">
+    <form class="form" id="form">
       <h2 class="titulo">Regístrate</h2>
       <input
         type="text"
         class="nombre_form input"
         placeholder="Nombre:"
+        required
+      />
+      <input
+        type="text"
+        class="apellido_form input"
+        placeholder="Apellido:"
         required
       />
       <input
@@ -45,24 +51,25 @@
         title="Ingresa un correo valido"
         required
       />
-     <!--  <textarea
+      <!--  <textarea
         name="mensaje_form input"
         placeholder="Mensaje:"
         class="mensaje_form"
       ></textarea> -->
-      <div class="botones" method="get" action="gracias.html" >
+      <div class="terminos">
+        <input class="input_term" type="checkbox" />
+        <label for="">He leido y acepto los</label>
+        <a href="#">Terminos y condiciones</a>
+      </div>
+
+      <div class="botones" method="get" action="gracias.html">
         <input type="submit" value="Enviar" class="enviar_form" />
-        <input type="submit" value="Borrar" class="borrar" />
+        <!-- <input type="submit" value="Borrar" class="borrar" /> -->
       </div>
     </form>
   </body>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      let formulario = document.getElementById('formul');
-      formulario.addEventListener('', function() {
-        formulario.reset();
-      });
-    });
-  </script>
+  <script src="form.js"></script>
+    
+  
 </html>
